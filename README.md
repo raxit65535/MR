@@ -9,11 +9,11 @@
  ## MR2 (getting most popular ISBN locations) (where are books most popular)
 
  input: BX-Book-Ratings.csv and BX-Users.csv
- <pre>>
+ <pre>
  Mapper1- Maps values from both the csv file. (by matching the pattern ".*\\d+.*")
  BX-Book-Ratings.csv: get userid, ISBN (key,value)
  BX-User.csv: get userid, location (key, value)
- </pre>>
+ </pre>
  _(one userid can reference multipe ISBNs, but single location)_
  
  <pre>
