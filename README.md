@@ -1,10 +1,10 @@
 ## MR1 (finding the Average Book Rating)
 
-<pre>>
+<pre>
  input: BX-Book-Ratings.csv
  Mapper - gets values of ISBN and BookRating and send it in reducer phase, key= ISBN and value= Ratings
  Reducer - get key & iterate it's value = get values and find average.
-</pre>>
+</pre>
 
  ## MR2 (getting most popular ISBN locations) (where are books most popular)
 
@@ -16,7 +16,7 @@
  </pre>>
  _(one userid can reference multipe ISBNs, but single location)_
  
- <pre>>
+ <pre>
  Reducer-1 - create new key, from ISBN & userlocation, and its value part will contain user ids
  Mapper-2 - get the key and value, from reducer-1,
  Reducer-2 - get new key (ISBN+userlocation) and iterate its values.
@@ -83,3 +83,4 @@ _(one user ID can have multiple ISBN but single Age Value)_
  Reducer - get the keys, iterate through values and do sum count.
 </pre>
 
+########thanks to Shashwat21 for helping out.
